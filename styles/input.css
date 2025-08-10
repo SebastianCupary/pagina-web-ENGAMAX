@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-jost: 'Jost', sans-serif;    
+    --font-ephesis: 'Ephesis', cursive;
+    --color-azul: #026dec;
+    --font-lobster: 'Lobster', cursive;
+    --color-azulOscuro: #101828;
+    --color-grisOscuro:#2a3642;
+    --color-grisMenosOscuro: #53657b;
+    --color-grisClaro:#728298;
+    --color-rojo:#ca1d19;
+    --color-rojoAntiguo: #fe4936;
+}
+
+:root{
+    --font-ephesis: 'Ephesis', cursive;
+    --azul: #026dec;
+    --grisOscuro:#2a3642;
+    --grisMenosOscuro: #53657b;
+    --grisClaro:#728298;
+    --rojo:#ca1d19;
+    --azulOscuro:#101828;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 48rem) {
+    body{
+        background-size: 22%;
+    }
+}
+
+/*Para mantener el footer abajo (el body debe ser flex)*/
+main{
+    flex-grow: 1;
+}
+
+input{
+    background: #fff;
+    font-size: 1.1rem;
+    color: #000;
+    padding: 0.25rem;
+}
+
+*{
+    font-family: Jost, sans-serif;
+}
+
+
+@media (width >= 40rem) {
+header{    
+    padding: 1.9rem;
+}
+}
+
+header a{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 0.3rem;
+    transition: all 0.3s;
+}
+
+header a:hover{        
+    box-shadow: 0.3rem 0.3rem 0rem #fff;   
+    padding: 0.5rem; 
+    font-weight: 600;
+}
+
+#linkPerfilUsuario{
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+
+footer a{
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+footer ul>li{
+    margin-top: 0.5rem
+}
+
+footer h1{
+font-size: 1.7rem;
+font-weight: bold;
+}
+
+label{
+    font-size: 1.2rem;  
+    font-family: Jost, sans-serif;
+}
+
+p{
+    transition: all 0.3s;
+}
+
+input{
+    outline: none;
+}
+
+
+td a{    
+    transition: 0.3s;
+}
+
+
+td a:hover{
+    font-weight: bold;
+    
+}
+
+
+
+.carta{
+    transition: all 0.3s ;
+    background-color: var(--azulOscuro);
+    color: #fff ;
+}
+
+.carta:hover img{
+    border: none;
+    border-radius: 24px 24px 0px 0px;
+}
+
+/*.carta:hover p{
+    padding-left: 1.5rem;
+}*/
+
+.carta img{
+    transition: all 0.3s;
+}
+
+.carta:hover{
+    box-shadow: #000 5px 5px 15px 3px;
+    border: none;
+    border-radius: 25px;
+}
+
+.cartaLote{
+    transition: all 0.3s;
+    background-color: var(--azulOscuro);
+    color: #fff;
+}
+
+.cartaLote:hover{
+    cursor: pointer;
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.detallesAnimal ::placeholder{
+    color: #000;
+    font-size: 1.1rem;    
+}
+
+
+
+.formRegistrarAnimal label{
+    color: #fff;
+  font-size: 1.3rem;
+  filter: 
+    drop-shadow(1px 0px 0px black)
+    drop-shadow(-1px 0px 0px black)
+    drop-shadow(0px 1px 0px black)
+    drop-shadow(0px -1px 0px black);
+    
+    
+}
+
+.formRegistrarAnimal input:focus{
+    box-shadow: 0.5rem 0.5rem 0rem #000;
+}
+
+.formRegistrarAnimal input{        
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+
+
+.formRegistrarAnimal select:focus{
+    outline: none;
+    box-shadow: 0.5rem 0.5rem 0rem #000;
+}
+
+.formRegistrarAnimal select{
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+}
+
+.formRegistrarAnimal h2{
+    background-color: var(--azulOscuro);
+    border-color: none;
+    padding: 0.4rem;
+    border-radius: 12px;
+    color: #fff;
+    
+}
+
+
+.h1RegistrarAnimal{
+    padding: 0.5rem;
+    border-radius: 12px;
+    background-color: var(--azulOscuro);
+ 
+    
+    
+}
+
+
+.btnRegistrarAnimal:hover{
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0rem #000;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: solid 2px #000;
+}
+
+.btnRegistrarVariosAnimales:hover{
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0rem #000;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: solid 2px #000;
+}
+
+.btnRegistrarAnimal{
+    border: solid 2px #000;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.3s;
+}
+
+.btnRegistrarVariosAnimales{
+    border: solid 2px #000;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.3s;
+}
+
+.formLogin input{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 2px #fff;
+    color:#fff;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.formLogin label{
+    font-size: 1.5rem;
+}
+
+.btnLoginIngresar{
+    transition: all 0.3s;
+}
+
+.btnLoginIngresar:hover{    
+    background: var(--azulOscuro);
+    color:#fff;
+    cursor: pointer;
+}
+
+.imgTrabajador{
+    border-radius: 50%;    
+}
+
+#mobile-menu a:hover{
+    background-color: var(--azul);
+}
+
+.bodyPerfilUsuario{
+    background-size: 22%;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/*.footerh1{
+    font-size: 2.5rem;
+    
+}*/
+
+.formularioAgregarAlmacen input{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.formularioAgregarAlmacen button{
+    background-color: var(--azulOscuro);
+    border-radius: 3px;
+    border: solid 1px #fff;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+.formularioAgregarAlmacen button:hover{
+    background-color: #fff;
+    color: var(--azulOscuro);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#dialogAgregarAlmacen::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#selectAlmacenes option{
+    background-color: #fff;
+    color: var(--azulOscuro);
+}
+
+#selectAlmacenes>select{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.tableContainer::-webkit-scrollbar {
+    height:1rem;
+    border: #000 solid 1px;
+    width: 10px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+    background-color: var(--azulOscuro);    
+}
+
+
+th{
+    border: solid 2px #000;
+    background: var(--azulOscuro);
+}
+
+td{
+    color: #000;
+    border: solid 2px #000;    
+}
+
+
+.contenedorPagina{    
+    height: auto;  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#div1Pagina{            
+    padding: 1rem;    
+    font-size: 1.2rem;
+    color: #000;      
+    
+}
+
+#div1Pagina img{
+    filter: drop-shadow(1px 1px 3px black); 
+}
+
+
+
+
+#div2Pagina{
+    background-image: linear-gradient(rgba(0,0,0,0.6)),url('/assets/vacaBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;          
+}
+#div2Pagina h1{
+    font-size: 4rem;
+    font-family: 'Ephesis'; 
+}
+#div2Pagina p{
+    padding: 0 2rem 1rem 2rem;
+    font-size: 1.1rem;
+    text-align: justify;      
+}
+
+#div3Pagina{
+    margin-top:2rem;
+}
+#div3Pagina h1{        
+    font-weight: bold;
+    font-size: 1.7rem;    
+}
+#div3Pagina p{
+    
+    padding: 0 2rem 1rem 2rem;
+    font-size: 1.1rem;
+    text-align: justify;  
+    font-style: italic;    
+}
+
+
+#div4Pagina h1{             
+    font-weight: bold;
+    font-size: 1.7rem;    
+}
+#div4Pagina p{
+    padding: 0 2rem 2rem 2rem;
+    font-size: 1.1rem;
+    text-align: justify;    
+    font-style: italic;         
+}
+
+.contenedorPagina hr{
+    width: 60%;
+    margin: 0.5rem auto;    
+}
+
+
+#div5Pagina{    
+    padding: 1rem;
+    font-size: 1.1rem;  
+    margin-bottom: -1rem;      
+}
+
+
+.btnTransacciones{
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    color:#fff;
+    background: var(--azulOscuro);
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.btnTransacciones:hover{
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0rem #000;
+    font-weight: bold;
+}
+
+#div6Pagina{
+    display: flex;
+    align-items: normal;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.itemsDeContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 6rem;
+}
+
+
+.itemsDeContacto svg{
+    width: 5rem;
+}
+
+.itemsDeContacto h3{
+    font-weight: bold;
+
+}
+
+.itemsDeContacto p{
+    max-width: 7rem;
+    overflow-wrap: break-word;
+}
+
+#divUbicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;    
+    width: 100%;
+    height: auto;
+}
+
+#divUbicacion iframe{
+    width: 90%;
+    height: 20rem;
+    border: none;
+    margin-bottom: 2rem;
+    border-radius: 24px;
+}
+
+.h2InfoContacto{
+    font-weight: bold;
+    font-size: 2rem;    
+    margin-bottom: 1rem;
+}
+
+@media (width >= 48rem){
+
+    #div1Pagina{
+        display: none;
+    }
+
+
+    .divBienvenidaBigScreen{
+        display: block;
+        text-align: center;
+        padding-top: 6rem;
+        
+    }
+
+
+    .pBienvenidos{
+        font-family: 'Ephesis';
+        font-weight: normal;
+        font-size: 4rem;
+        /*filter: drop-shadow(2px 2px 5px #fff);*/
+    }
+
+    .pParrafoEmpresaGanadera{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: -1.5rem;
+    }
+    .btnTransacciones{
+        background-color: #fff;
+        color: var(--azulOscuro);
+        font-size: 1.2rem;
+        padding: 0.8rem 1.2rem;
+        margin-top: 1rem;
+    }   
+
+
+    #div2Pagina h1{
+        font-family: 'Ephesis';
+        text-decoration: none;
+        font-size: 10rem;  
+        padding: 2rem 0rem;     
+    }
+
+    #div2Pagina p{
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.5rem;  
+        margin-bottom: 4rem;  
+    }
+    
+    
+    #div3Pagina{
+        display: flex;
+        flex-direction: column;   
+        margin-top: 0rem;
+        width: 30%;   
+        background-color: var(--azulOscuro);   
+        padding: 1rem 0.5rem;
+        color: #fff;
+        border-radius: 15px;              
+        justify-content: center;  
+    }
+
+    #div3Pagina h1{
+        font-size: 3rem;   
+        font-family: 'Ephesis';
+        margin-bottom: -1rem;     
+    }
+
+    #div3Pagina p{
+        font-size: 1.494rem;
+        text-align: center; 
+    }
+
+    #div4Pagina{   
+        display: flex;
+        flex-direction: column;     
+        width: 30%;  
+        height: auto;     
+        background-color: var(--azulOscuro);  
+        padding: 1rem 0.5rem;
+        color: #fff;
+        border-radius: 15px;        
+        justify-content: center; 
+            
+    }
+
+    #div4Pagina h1{
+        font-family: 'Ephesis';
+        font-size: 3rem;    
+        margin-bottom: -1rem;
+    }
+
+    #div4Pagina p{
+        
+        font-size: 1.5rem;
+        text-align: center; 
+    }
+
+    .divMisionVision{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;    
+    margin-top: 4rem;    
+    }
+
+    hr{
+        color: var(--rojo);
+        border: solid 2px var(--rojo);   
+    }
+
+    #div5Pagina{
+        width: 100%;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+        color: var(--azulOscuro);
+    }
+
+    #div6Pagina{
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .itemsDeContacto{
+        display: flex;    
+        max-width: 100%;    
+        flex-direction: column;
+        align-items: center;           
+    }
+    
+    .itemsDeContacto h3{
+        font-size: 1.2rem;
+        max-width: 4rem;
+        z-index: 3;        
+    }
+
+    #h3HorariosDeAtencion{
+        margin-top: 5.3rem;
+        position: absolute;                
+        max-width: 100%;
+    }
+    #pHorariosDeAtencion{
+        position: absolute;
+        max-width: 100%;
+        margin-top: 7rem;
+        
+    }
+    
+    .itemsDeContacto p{
+        font-size: 1rem;
+        max-width: 20rem;
+    }
+    
+
+    .h2InfoContacto{
+    font-weight: normal;
+    font-family: 'Ephesis';
+    font-size: 5rem;    
+    margin-bottom: 1rem;
+    }
+
+    #divUbicacion iframe{
+    height: 30rem;
+}
+
+}
