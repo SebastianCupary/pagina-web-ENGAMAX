@@ -54,7 +54,7 @@ input{
 }
 
 *{
-    font-family: Jost, sans-serif;
+    font-family: Jost, sans-serif;    
 }
 
 
@@ -377,7 +377,7 @@ td{
 
 
 #div2Pagina{
-    background-image: linear-gradient(rgba(0,0,0,0.6)),url('/assets/vacaBackground.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.8)),url('/assets/vacaBackground.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;          
@@ -498,7 +498,99 @@ td{
     font-weight: bold;
     font-size: 2rem;    
     margin-bottom: 1rem;
+
 }
+
+#modificacionContainer{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+    padding: 5rem;
+    color:#000;   
+    border-radius: 12px;
+}
+
+input{        
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+input:focus{
+    box-shadow: 0.5rem 0.5rem 0rem #000;
+}
+
+#modificacionContainer .inputModificaciones{
+    display: flex;
+     
+        width: 100%;
+    flex-direction: column;
+}
+
+.inputModificaciones label{
+    font-size: 1.3rem;
+}
+
+#modificacionContainer button{    
+    border-radius: 0.7rem;    
+    padding: 0.7rem;
+    transition: all 0.3s;
+    color:#fff;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+#modificacionContainer button:hover{        
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: #000 0.4rem 0.5rem 0rem;
+}
+
+
+@media( 320px <= width <= 480px){
+
+footer{
+    display: flex;
+    flex-direction: column;    
+}
+
+footer a p{    
+    font-size: 1.1rem;
+    word-break: break-all;
+}
+
+#div1Pagina{    
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+}
+#div1Pagina img{
+    width: 40rem;
+}
+#div2Pagina{
+    padding: 1.5rem 0rem 1.5rem 0rem;    
+}
+
+.divMisionVision{
+margin-bottom: -3rem;
+}
+
+#div3Pagina{    
+    text-align: center;
+}
+
+#div2Pagina p{        
+    max-width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#div2Pagina h1{
+    max-width: 100%;
+    font-size: 3.2rem;    
+}
+
+}
+
+
 
 @media (width >= 48rem){
 
@@ -510,29 +602,34 @@ td{
     .divBienvenidaBigScreen{
         display: block;
         text-align: center;
-        padding-top: 6rem;
-        
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .divBienvenidaBigScreen h1{
+        font-size: 13rem;             
     }
 
 
     .pBienvenidos{
         font-family: 'Ephesis';
         font-weight: normal;
-        font-size: 4rem;
+        font-size: 4.5rem;
         /*filter: drop-shadow(2px 2px 5px #fff);*/
     }
 
     .pParrafoEmpresaGanadera{
         text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: -1.5rem;
+        font-size: 1.6rem;        
+
     }
     .btnTransacciones{
-        background-color: #fff;
-        color: var(--azulOscuro);
-        font-size: 1.2rem;
+        background-color: var(--azulOscuro);
+        color: #fff;
+        font-size: 1.7rem;
         padding: 0.8rem 1.2rem;
         margin-top: 1rem;
+        margin-bottom: -2rem;
     }   
 
 
@@ -668,4 +765,182 @@ td{
     height: 30rem;
 }
 
+footer{
+    padding: 2rem 0rem 2rem 0rem;
 }
+
+footer h1{
+    font-size: 2.5rem;
+}
+
+.footerh1 p{
+    font-size: 2.5rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+}
+footer a{
+    font-size: 1.2rem
+}
+
+footer svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+}
+
+@media(width >= 92rem){
+.divBienvenidaBigScreen{
+    height: 100dvh;
+}
+.pBienvenidos{
+    font-size: 6.5rem;
+    margin-bottom: -8rem;
+    margin-top: 1rem;    
+}
+.divBienvenidaBigScreen button{
+    font-size: 2.5rem;
+}
+
+.divBienvenidaBigScreen h1{
+    font-size: 24rem;
+}
+
+.pParrafoEmpresaGanadera{
+    font-size: 2.8rem;
+    margin-top: -5rem;
+}
+
+.btnTransacciones a{
+    font-size: 2.5rem;
+    padding: 1.5rem 1.5rem;
+    
+}
+.btnTransacciones svg{
+    width: 6rem;
+    height: 6rem;
+}
+
+#div2Pagina h1{
+    font-size: 20rem;    
+}
+
+#div2Pagina p{
+    font-size: 2.7rem;
+}
+
+#div3Pagina h1{
+    font-size: 5rem;
+    
+}
+
+#div3Pagina p{
+    padding: 0 3rem 3rem  3rem;
+    font-size: 2.7rem;
+}
+
+
+#div4Pagina h1{
+    font-size: 5rem;
+    margin-top: -5rem;
+}
+
+#div4Pagina p{    
+    font-size: 2.7rem;
+    
+}
+
+.divMisionVision img{
+    width: 40rem;
+    height: 40rem;
+}
+
+.h2InfoContacto{
+    font-size: 12rem;    
+}
+
+
+
+#divUbicacion h3{
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+#divUbicacion iframe{
+    width: 80%;
+    height: 50rem;
+}
+
+#div5Pagina{
+    font-size: 2.7rem;        
+}
+
+
+#PrimerItemDeContacto h3{
+margin-right: 4.5rem;
+}
+#SegundoItemDeContacto h3{
+margin-right: 1.5rem;
+}
+.itemsDeContacto svg{
+    width: 50%;
+}
+.itemsDeContacto h3{    
+    font-size: 2rem;
+}
+.itemsDeContacto p{
+    font-size: 2rem;
+}
+#TercerItemDeContacto h3{
+margin-top: 10rem;
+}
+
+#TercerItemDeContacto p{
+margin-top: 14rem;
+}
+
+header{
+    padding: 3rem;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+
+header a{
+    font-size: 2rem;
+    width: 15%;
+}
+
+footer{
+    padding: 3rem 0rem 3rem 0rem;
+}
+footer p{
+    font-size: 2.2rem;
+}
+
+footer a{
+    font-size: 2.2rem
+}
+
+footer svg{
+    width: 4rem;
+    height: 4rem;
+}
+
+footer .footerh1{
+    font-size: 4.5rem;
+}
+
+footer .footerh1 p{
+    font-size: 4.5rem
+}
+
+
+}
+
+
+

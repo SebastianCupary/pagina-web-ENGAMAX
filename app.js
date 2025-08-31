@@ -21,9 +21,33 @@ app.use(express.urlencoded({ extended: false }));
 
 
 
+app.get("/detallesProducto",(req,res)=>{
+    try{
+        res.render("detallesProducto");
+    }catch{
+        console.error("Error al renderizar la vista:", error);
+        res.status(500).send("Error interno del servidor");
+    }
+})
 
 
-///import ventaGanadoRoutes from "./routes/ventaGanado.js";
+app.get("/modificacion",(req,res)=>{
+    try{
+        res.render("modificacion");
+    }catch(error){
+        console.error("Error al renderizar la vista:", error);
+        res.status(500).send("Error interno del servidor");
+    }
+});
+
+app.get("/agregarGanado",(req,res)=>{
+    try{
+        res.render("agregarGanado");
+    }catch(error){
+        console.error("Error al renderizar la vista:", error);
+        res.status(500).send("Error interno del servidor");
+    }
+})
 
 app.get("/ganado", (req, res) => {
     try {

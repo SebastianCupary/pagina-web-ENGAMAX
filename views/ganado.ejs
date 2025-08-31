@@ -14,7 +14,7 @@
         <main>
             <div id="cartasContainer"
                 class="grid grid-cols-2 gap-1 mx-[0.5rem] sm:grid-cols-4 md:grid-cols-5 sm:gap-2 my-[4.5rem] sm:mx-[2rem]">
-                <div class="carta bg-white md:h-38 lg:h-auto bovino">
+                <div class="carta bg-white md:h-38 lg:h-auto">
                     <a href="#">
                         <img class="h-30 w-full md:h-30 lg:h-43" src="/assets/vacaBackground.jpg" alt="">
                         <h2 class=" text-center font-jost text-xl font-bold">
@@ -39,7 +39,36 @@
 
 
 
-                <div class="carta bg-white md:h-38 lg:h-auto bovino">
+                <div class="carta bg-white md:h-38 lg:h-auto">
+                    <a href="/detallesProducto">
+                        <img class="h-25 w-full md:h-30 lg:h-43" src="/assets/vacaBackground.jpg" alt="">
+                        <h2 class="text-center font-jost text-xl font-bold">
+                            Nombre vaca
+                        </h2>
+                        <div class="pb-2 flex flex-col pl-5 items-start">
+                            <p class="text-center font-jost">
+                                Sexo: Hembra
+                            </p>
+                            <p class="text-center font-jost">
+                                Raza: Holstein
+                            </p>
+                            <p>
+                                Peso: 400 kg
+                            </p>
+                            <p class="text-center font-jost">
+                                Precio total: 10000 Bs.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="/modificacion"
+                        class="flex mx-auto w-fit bg-green-800 px-2 py-1 mb-2 rounded-lg">Modificar</a>
+                </div>
+
+
+
+
+
+                <div class="carta bg-white md:h-38 lg:h-auto">
                     <a href="#">
                         <img class="h-25 w-full md:h-30 lg:h-43" src="/assets/vacaBackground.jpg" alt="">
                         <h2 class="text-center font-jost text-xl font-bold">
@@ -66,7 +95,7 @@
 
 
 
-                <div class="carta bg-white md:h-38 lg:h-auto bovino">
+                <div class="carta bg-white md:h-38 lg:h-auto">
                     <a href="#">
                         <img class="h-25 w-full md:h-30 lg:h-43" src="/assets/vacaBackground.jpg" alt="">
                         <h2 class="text-center font-jost text-xl font-bold">
@@ -93,7 +122,7 @@
 
 
 
-                <div class="carta bg-white md:h-38 lg:h-auto bovino">
+                <div class="carta bg-white md:h-38 lg:h-auto">
                     <a href="#">
                         <img class="h-25 w-full md:h-30 lg:h-43" src="/assets/vacaBackground.jpg" alt="">
                         <h2 class="text-center font-jost text-xl font-bold">
@@ -118,9 +147,7 @@
 
 
 
-
-
-                <div class="carta bg-white md:h-38 lg:h-auto bovino">
+                <div class="carta bg-white md:h-38 lg:h-auto">
                     <a href="#">
                         <img class="h-25 w-full md:h-30 lg:h-43" src="/assets/vacaBackground.jpg" alt="">
                         <h2 class="text-center font-jost text-xl font-bold">
@@ -143,28 +170,16 @@
                     </a>
                 </div>
 
-
-
-                <div class="carta bg-white md:h-38 lg:h-auto bovino">
-                    <a href="#">
-                        <img class="h-25 w-full md:h-30 lg:h-43" src="/assets/vacaBackground.jpg" alt="">
-                        <h2 class="text-center font-jost text-xl font-bold">
-                            Nombre vaca
-                        </h2>
-                        <div class="pb-2 flex flex-col pl-5 items-start">
-                            <p class="text-center font-jost">
-                                Sexo: Hembra
-                            </p>
-                            <p class="text-center font-jost">
-                                Raza: Holstein
-                            </p>
-                            <p>
-                                Peso: 400 kg
-                            </p>
-                            <p class="text-center font-jost">
-                                Precio total: 10000 Bs.
-                            </p>
-                        </div>
+                <div id="btnAgregarAnimal" class="carta flex items-center justify-center text-center text-xl">
+                    <a href="/agregarGanado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 5l0 14" />
+                            <path d="M5 12l14 0" />
+                        </svg>
+                        <h2>Agregar Animal</h2>
                     </a>
                 </div>
             </div>

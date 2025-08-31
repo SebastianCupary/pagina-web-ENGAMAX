@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main>
+            <a href="/ganado"
+                class="flex text-white px-5 text-2xl bg-azulOscuro rounded-lg absolute mt-[5rem] ml-[1rem] md:mt-[8rem] md:ml-[10rem]">⬅</a>
+            <div id="modificacionContainer" class="sm:gap-2 md:w-[50%] my-[4.5rem] sm:mx-[2rem]">
+                <h1 class="bg-azulOscuro text-4xl p-3 text-white rounded-2xl mt-[-2rem] mb-[2rem]">Agregar producto</h1>
+                <div class="inputModificaciones">
+                    <label for="sexo">Imagen</label>
+                    <input type="image" name="sexo" id="">
+                </div>
+                <div class="inputModificaciones">
+                    <label for="sexo">Sexo</label>
+                    <input type="text" name="sexo" id="">
+                </div>
+                <div class="inputModificaciones">
+                    <label for="raza">Raza</label>
+                    <input type="text" name="raza" id="">
+                </div>
+                <div class="inputModificaciones">
+                    <label for="peso">Peso</label>
+                    <input type="number" name="peso" id="">
+                </div>
+                <div class="inputModificaciones">
+                    <label for="precio">Precio</label>
+                    <input type="number" name="precio" id="">
+                </div>
+                <div class="flex space-x-4 md:space-x-[3rem]">
+                    <button class="bg-red-700">Eliminar</button>
+                    <button class="bg-azulOscuro">Agregar</button>
+                </div>
+            </div>
+        </main>
+        <%- include('partials/footer') %>
+
+</body>
+
+</html>
